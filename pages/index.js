@@ -11,7 +11,7 @@ export default function HomePage() {
             <Link href="/login">My First Post</Link>
           </li>
           <li>
-            <Link href="#">My First Post</Link>
+            <Link href="/mypage">My First Post</Link>
           </li>
           <li>
             <Link href="#">My First Post</Link>
