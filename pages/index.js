@@ -19,6 +19,9 @@ export default function HomePage() {
           <li>
             <Link href="#">My First Post</Link>
           </li>
+          <li>
+            <Link href="/raffle">My Raffle</Link>
+          </li>
         </ul>
       </Fragment>
     </div>
