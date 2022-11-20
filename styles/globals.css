@@ -45,3 +45,107 @@ li {
   justify-content: center;
   align-items: center;
 }
+
+/* added styles */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  height: 100vh;
+}
+
+.raffle-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px 0px;
+  margin-bottom: 40px;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.raffle-header__buttons {
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.raffle-namelist > span {
+  color: #ffffff;
+  background-color: #4e0051;
+  padding: 15px 30px;
+  margin: 10px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.raffle-names {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* app buttons */
+.button-primary {
+  background-color: #ce00e0;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+  color: #ffffff;
+  border-radius: 72px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.button-primary:hover {
+  background-color: #ad00bd;
+  cursor: pointer;
+}
+
+.button-primary > img {
+  margin-right: 10px;
+}
+
+.button-outline {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 30px;
+  color: #ad00bd;
+  border-radius: 72px;
+  border: 2px solid #c700d9;
+  display: flex;
+  align-items: center;
+}
+
+.button-outline:hover {
+  background-color: rgba(238, 238, 238, 0.084);
+  cursor: pointer;
+}
+
+.button-outline > img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.raffle-ends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.raffle-ends h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}

@@ -21,8 +21,9 @@ function App() {
   const confettiWrapper = useRef(null);
   const height = 60;
   const transitions = useTransition(
+    // dont really understand why we have to work on the data and still transition yet
     names.map((data, i) => ({ ...data, y: 0.5 * i })),
-    (data) => data.name,
+    (d) => d.name,
     {
       from: { position: "initial", opacity: 0 },
       leave: {
@@ -33,7 +34,6 @@ function App() {
       update: ({ y }) => ({ y }),
     }
   );
-  console.log(data);
   function startRaffle() {
     if (names.length <= 1) {
       setWraffling(true);
@@ -41,6 +41,7 @@ function App() {
       return;
     }
     const randomIndex = Math.floor(Math.random() * names.length);
+    // if the current name is not the same as the name that we currently on then it will be added to the array
     const filterOutNames = names.filter((name) => name !== names[randomIndex]);
     setNames(filterOutNames);
     setInitialLoad(true);
@@ -58,6 +59,7 @@ function App() {
       const filteringTimer = setTimeout(() => {
         startRaffle();
       }, 700);
+      //clean up function
       return () => {
         clearTimeout(filteringTimer);
       };
@@ -116,7 +118,7 @@ function App() {
       <div>
         {showConfetti && (
           <div className="raffle-ends">
-            <h3>Congratulations! You have won the raffle!</h3>
+            <h3>Go get it, you've got what it takes!!!</h3>
             <button className="button-outline" onClick={restartRaffle}>
               <Image src={Replay} alt="heading logo" />
               Replay
