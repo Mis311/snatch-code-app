@@ -12,10 +12,10 @@
     "@react-three/drei": "^9.40.0",
     "@react-three/fiber": "^8.9.1",
     "lodash": "^4.17.21",
-    "next": "13.0.1",
-    "react": "18.2.0",
+    "next": "^13.0.1",
+    "react": "^18.2.0",
     "react-confetti": "^6.1.0",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-spring": "8.0.25"
   },
